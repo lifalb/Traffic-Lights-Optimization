@@ -15,10 +15,9 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Acknowledgments](#acknowledgments)
+- [Training and Testing the models](#training-and-testing-the-models)
+- [Credits](#credits)
+
 
 ---
 

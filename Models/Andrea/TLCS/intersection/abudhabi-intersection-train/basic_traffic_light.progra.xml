@@ -1,0 +1,13 @@
+<!-- 7- 6- 7-6 -->
+<additional>
+  <tlLogic id="GS_cluster_1791225033_1791225037_1925359954_1925359955_#8more" programID="basic" offset="0" type="static">
+    <phase duration="30" state="GGGGGGGrrrrrrrrrrrrrrrrrrrrrGrGrGG"/>
+    <phase duration="5"  state="yyyyyyyrrrrrrrrrrrrrrrrrrrrryryryy"/>
+    <phase duration="30"  state="rrrrrrrGGGGGGrrrrrrrrrrrrrGGrrGrGr"/>
+    <phase duration="5"  state="rrrrrrryyyyyyrrrrrrrrrrrrryyrryryr"/>
+    <phase duration="30" state="rrrrrrrrrrrrrGGGGGGGrrrrrrGrGGrrGr"/>
+    <phase duration="5"  state="rrrrrrrrrrrrryyyyyyyrrrrrryryyrryr"/>
+    <phase duration="30"  state="rrrrrrrrrrrrrrrrrrrrGGGGGGGrGrGGrr"/>
+    <phase duration="5"  state="rrrrrrrrrrrrrrrrrrrryyyyyyyryryyrr"/>
+  </tlLogic>
+</additional>

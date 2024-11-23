@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- <route id="route00" color="1,1,0" edges="182191279#0 182191279#1 463663572#2"/> -->
+    <route id="route00" color="1,1,0" edges="S2JE J2E"/>
+    <!-- <route id="route01" color="1,1,0" edges="479203919#0 TL2S"/> -->
+    <route id="route01" color="1,1,0" edges="S2TL TL2S"/>
+    <!-- <route id="route02" color="1,1,0" edges="479203919#0 TL2N 1148455774#2"/> -->
+     <route id="route02" color="1,1,0" edges="S2TL TL2N"/>
+    <route id="route03" color="1,1,0" edges="S2TL TL2W"/>
+
+    <!-- <route id="route10" color="1,1,0" edges="167719753#0 167719753#1 463663572#1"/> -->
+     <route id="route10" color="1,1,0" edges="E2TL TL2E"/>
+    <route id="route11" color="1,1,0" edges="E2TL TL2S"/>
+    <route id="route12" color="1,1,0" edges="E2JN J2N"/>
+    <route id="route13" color="1,1,0" edges="E2TL TL2W"/>
+
+    <route id="route20" color="1,1,0" edges="W2TL TL2E"/>
+    <route id="route21" color="1,1,0" edges="W2JS J2DS"/>
+    <route id="route22" color="1,1,0" edges="W2TL TL2N"/>
+    <route id="route23" color="1,1,0" edges="W2TL TL2W"/>
+
+    <route id="route30" color="1,1,0" edges="N2TL TL2E"/>
+    <route id="route31" color="1,1,0" edges="N2TL TL2S"/>
+    <route id="route32" color="1,1,0" edges="N2TL TL2N"/>
+    <route id="route33" color="1,1,0" edges="N2JW N2DW"/>
+
+
+    <vType id="veh_passenger" vClass="passenger" maxSpeed = '70' color="1,0,0"/>
+
+    <flow id="type00_0"   begin="0" type="veh_passenger" route="route00" departLane = "best" end="2500" probability = "0.8"/>
+    <flow id="type01_0"   begin="0" type="veh_passenger" route="route01" departLane = "best" end="2500" probability = "0.8"/>
+    <flow id="type02_0"   begin="0" type="veh_passenger" route="route02" departLane = "best" end="2500" probability = "0.8"/>
+    <flow id="type03_0"   begin="0" type="veh_passenger" route="route03" departLane = "best" end="2500" probability = "0.8"/>
+    <flow id="type10_0"   begin="0" type="veh_passenger" route="route10" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type11_0"   begin="0" type="veh_passenger" route="route11" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type12_0"   begin="0" type="veh_passenger" route="route12" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type13_0"   begin="0" type="veh_passenger" route="route13" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type20_0"   begin="0" type="veh_passenger" route="route20" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type21_0"   begin="0" type="veh_passenger" route="route21" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type22_0"   begin="0" type="veh_passenger" route="route22" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type23_0"   begin="0" type="veh_passenger" route="route23" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type30_0"   begin="0" type="veh_passenger" route="route30" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type31_0"   begin="0" type="veh_passenger" route="route31" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type32_0"   begin="0" type="veh_passenger" route="route32" departLane = "best" end="2500" probability = "0.05"/>
+    <flow id="type33_0"   begin="0" type="veh_passenger" route="route33" departLane = "best" end="2500" probability = "0.05"/>
+
+    <flow id="type00_1"   begin="2500" type="veh_passenger" route="route00" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type01_1"   begin="2500" type="veh_passenger" route="route01" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type02_1"   begin="2500" type="veh_passenger" route="route02" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type03_1"   begin="2500" type="veh_passenger" route="route03" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type10_1"   begin="2500" type="veh_passenger" route="route10" departLane = "best" end="5000" probability = "0.8"/>
+    <flow id="type11_1"   begin="2500" type="veh_passenger" route="route11" departLane = "best" end="5000" probability = "0.8"/>
+    <flow id="type12_1"   begin="2500" type="veh_passenger" route="route12" departLane = "best" end="5000" probability = "0.8"/>
+    <flow id="type13_1"   begin="2500" type="veh_passenger" route="route13" departLane = "best" end="5000" probability = "0.8"/>
+    <flow id="type20_1"   begin="2500" type="veh_passenger" route="route20" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type21_1"   begin="2500" type="veh_passenger" route="route21" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type22_1"   begin="2500" type="veh_passenger" route="route22" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type23_1"   begin="2500" type="veh_passenger" route="route23" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type30_1"   begin="2500" type="veh_passenger" route="route30" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type31_1"   begin="2500" type="veh_passenger" route="route31" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type32_1"   begin="2500" type="veh_passenger" route="route32" departLane = "best" end="5000" probability = "0.05"/>
+    <flow id="type33_1"   begin="2500" type="veh_passenger" route="route33" departLane = "best" end="5000" probability = "0.05"/>
+
+    <flow id="type00_2"   begin="5000" type="veh_passenger" route="route00" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type01_2"   begin="5000" type="veh_passenger" route="route01" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type02_2"   begin="5000" type="veh_passenger" route="route02" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type03_2"   begin="5000" type="veh_passenger" route="route03" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type10_2"   begin="5000" type="veh_passenger" route="route10" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type11_2"   begin="5000" type="veh_passenger" route="route11" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type12_2"   begin="5000" type="veh_passenger" route="route12" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type13_2"   begin="5000" type="veh_passenger" route="route13" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type20_2"   begin="5000" type="veh_passenger" route="route20" departLane = "best" end="7500" probability = "0.8"/>
+    <flow id="type21_2"   begin="5000" type="veh_passenger" route="route21" departLane = "best" end="7500" probability = "0.8"/>
+    <flow id="type22_2"   begin="5000" type="veh_passenger" route="route22" departLane = "best" end="7500" probability = "0.8"/>
+    <flow id="type23_2"   begin="5000" type="veh_passenger" route="route23" departLane = "best" end="7500" probability = "0.8"/>
+    <flow id="type30_2"   begin="5000" type="veh_passenger" route="route30" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type31_2"   begin="5000" type="veh_passenger" route="route31" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type32_2"   begin="5000" type="veh_passenger" route="route32" departLane = "best" end="7500" probability = "0.05"/>
+    <flow id="type33_2"   begin="5000" type="veh_passenger" route="route33" departLane = "best" end="7500" probability = "0.05"/>
+
+    <flow id="type00_3"   begin="7500" type="veh_passenger" route="route00" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type01_3"   begin="7500" type="veh_passenger" route="route01" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type02_3"   begin="7500" type="veh_passenger" route="route02" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type03_3"   begin="7500" type="veh_passenger" route="route03" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type10_3"   begin="7500" type="veh_passenger" route="route10" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type11_3"   begin="7500" type="veh_passenger" route="route11" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type12_3"   begin="7500" type="veh_passenger" route="route12" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type13_3"   begin="7500" type="veh_passenger" route="route13" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type20_3"   begin="7500" type="veh_passenger" route="route20" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type21_3"   begin="7500" type="veh_passenger" route="route21" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type22_3"   begin="7500" type="veh_passenger" route="route22" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type23_3"   begin="7500" type="veh_passenger" route="route23" departLane = "best" end="10000" probability = "0.05"/>
+    <flow id="type30_3"   begin="7500" type="veh_passenger" route="route30" departLane = "best" end="10000" probability = "0.8"/>
+    <flow id="type31_3"   begin="7500" type="veh_passenger" route="route31" departLane = "best" end="10000" probability = "0.8"/>
+    <flow id="type32_3"   begin="7500" type="veh_passenger" route="route32" departLane = "best" end="10000" probability = "0.8"/>
+    <flow id="type33_3"   begin="7500" type="veh_passenger" route="route33" departLane = "best" end="10000" probability = "0.8"/>
+
+    <flow id="type00_4"   begin="10000" type="veh_passenger" route="route00" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type01_4"   begin="10000" type="veh_passenger" route="route01" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type02_4"   begin="10000" type="veh_passenger" route="route02" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type03_4"   begin="10000" type="veh_passenger" route="route03" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type10_4"   begin="10000" type="veh_passenger" route="route10" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type11_4"   begin="10000" type="veh_passenger" route="route11" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type12_4"   begin="10000" type="veh_passenger" route="route12" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type13_4"   begin="10000" type="veh_passenger" route="route13" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type20_4"   begin="10000" type="veh_passenger" route="route20" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type21_4"   begin="10000" type="veh_passenger" route="route21" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type22_4"   begin="10000" type="veh_passenger" route="route22" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type23_4"   begin="10000" type="veh_passenger" route="route23" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type30_4"   begin="10000" type="veh_passenger" route="route30" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type31_4"   begin="10000" type="veh_passenger" route="route31" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type32_4"   begin="10000" type="veh_passenger" route="route32" departLane = "best" end="12500" probability = "0.4"/>
+    <flow id="type33_4"   begin="10000" type="veh_passenger" route="route33" departLane = "best" end="12500" probability = "0.4"/>
+    
+    <!-- <vType id="ped_pedestrian" vClass="pedestrian"/> -->
+    <!-- top left to bottom right -->
+    <!-- <personFlow id="p0" begin="0" end="100000" probability="0.05"> -->
+        <!-- <walk edges=" 1234032441#0 464896838#1 464896838#0 463663631#2 463663631#0 463663630#2 463663630#0 463663628#1 463663628#0 1175028627"/> -->
+   <!-- </personFlow> -->
+   <!-- bottom left to top left  -->
+   <!-- <personFlow id="p1" begin="0" end="100000" probability="0.05"> -->
+        <!-- <walk edges="463663632#2 463663632#0 463663631#2"/> -->
+   <!-- </personFlow> -->
+     <!-- bottom left to bottom right -->
+   <!-- <personFlow id="p2" begin="0" end="100000" probability="0.05"> -->
+        <!-- <walk edges="463663632#2 463663629#2 463663629#0 463663628#1 463663628#0 1175028627"/> -->
+   <!-- </personFlow> -->
+</routes>

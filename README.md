@@ -15,6 +15,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [Generate testing and training datasets](#generate-testing-and-training-datasets)
 - [Training and Testing the models](#training-and-testing-the-models)
 - [Credits](#credits)
 
@@ -85,7 +86,7 @@ pip install -r requirements.txt
 
 ```
 
-### Generate testing and training datasets
+## Generate testing and training datasets
 
 To generate training and testing datasets:
 ```bash
@@ -93,21 +94,21 @@ cd "Generate route files"
 ```
 Modify the variables in `generate_test` and `generate_main` as needed, then run them.
 
-### Training and Testing the models
+## Training and Testing the models
 
-#### Basic traffic light system:
+### Basic traffic light system:
 ```bash
 cd Models/BasicTLS
 ```
 Modify the variables in `basicTLS_test` and `basicTLS_train` as needed, then run them.
 
-#### Vidali et al. approach:
+### Vidali et al. approach:
 ```bash
 cd Models/Andrea/TLCS
 ```
 Modify the variables in `training_main` and `testing_main` as needed, then run them.
 
-#### Lucas N. Alegre et al. approach:
+### Lucas N. Alegre et al. approach:
 ```bash
 cd Models/Sumo-rl/experiments
 ```

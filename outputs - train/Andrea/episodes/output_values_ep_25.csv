@@ -1,0 +1,2 @@
+episode,reward,accumulated_wait_times,accumulated_avg_wait_times,accumulated_queue_length,accumulated_avg_queue_length,accumulated_total_fuel_consumption,accumulated_avg_fuel_consumption,accumulated_pedestrian_wait_times,accumulated_pedestrian_avg_wait_times
+25,-103808.0,1215993,24.002072559314673,1215993,126.6659375,2179597184.9915504,43022.3280761034,0,0

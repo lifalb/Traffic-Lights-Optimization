@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- <route id="route00" color="1,1,0" edges="182191279#0 182191279#1 463663572#2"/> -->
+    <route id="route00" color="1,1,0" edges="S2JE J2E"/>
+    <!-- <route id="route01" color="1,1,0" edges="479203919#0 TL2S"/> -->
+    <route id="route01" color="1,1,0" edges="S2TL TL2S"/>
+    <!-- <route id="route02" color="1,1,0" edges="479203919#0 TL2N 1148455774#2"/> -->
+     <route id="route02" color="1,1,0" edges="S2TL TL2N"/>
+    <route id="route03" color="1,1,0" edges="S2TL TL2W"/>
+
+    <!-- <route id="route10" color="1,1,0" edges="167719753#0 167719753#1 463663572#1"/> -->
+     <route id="route10" color="1,1,0" edges="E2TL TL2E"/>
+    <route id="route11" color="1,1,0" edges="E2TL TL2S"/>
+    <route id="route12" color="1,1,0" edges="E2JN J2N"/>
+    <route id="route13" color="1,1,0" edges="E2TL TL2W"/>
+
+    <route id="route20" color="1,1,0" edges="W2TL TL2E"/>
+    <route id="route21" color="1,1,0" edges="W2JS J2DS"/>
+    <route id="route22" color="1,1,0" edges="W2TL TL2N"/>
+    <route id="route23" color="1,1,0" edges="W2TL TL2W"/>
+
+    <route id="route30" color="1,1,0" edges="N2TL TL2E"/>
+    <route id="route31" color="1,1,0" edges="N2TL TL2S"/>
+    <route id="route32" color="1,1,0" edges="N2TL TL2N"/>
+    <route id="route33" color="1,1,0" edges="N2JW N2DW"/>
+    <vType id="veh_passenger" vClass="passenger" maxSpeed = '70' color="1,0,0"/>
+                  
+        <vType id="ped_pedestrian" vClass="pedestrian"/>
+    <personFlow id="p0" begin="0" end="9600" probability="0.05">
+        <walk edges=" PED_1 PED_2"/>
+   </personFlow>
+   <personFlow id="p1" begin="0" end="9600" probability="0.05">
+        <walk edges="PED_3 PED_4"/>
+   </personFlow>
+   <personFlow id="p2" begin="0" end="9600" probability="0.05">
+        <walk edges="PED_5 PED_6"/>
+   </personFlow>
+   <personFlow id="p3" begin="0" end="9600" probability="0.05">
+        <walk edges="PED_7 PED_8"/>   </personFlow>
+                  
+<flow id="type00_0"   begin="0" type="veh_passenger" route="route00" departLane = "best" end="9600" probability = "0.01"/>
+<flow id="type01_0"   begin="0" type="veh_passenger" route="route01" departLane = "best" end="9600" probability = "0.005"/>
+<flow id="type02_0"   begin="0" type="veh_passenger" route="route02" departLane = "best" end="9600" probability = "0.01"/>
+<flow id="type03_0"   begin="0" type="veh_passenger" route="route03" departLane = "best" end="9600" probability = "0.005"/>
+<flow id="type10_0"   begin="0" type="veh_passenger" route="route10" departLane = "best" end="9600" probability = "0.005"/>
+<flow id="type11_0"   begin="0" type="veh_passenger" route="route11" departLane = "best" end="9600" probability = "0.005"/>
+<flow id="type12_0"   begin="0" type="veh_passenger" route="route12" departLane = "best" end="9600" probability = "0.01"/>
+<flow id="type13_0"   begin="0" type="veh_passenger" route="route13" departLane = "best" end="9600" probability = "0.01"/>
+<flow id="type20_0"   begin="0" type="veh_passenger" route="route20" departLane = "best" end="9600" probability = "0.01"/>
+<flow id="type21_0"   begin="0" type="veh_passenger" route="route21" departLane = "best" end="9600" probability = "0.01"/>
+<flow id="type22_0"   begin="0" type="veh_passenger" route="route22" departLane = "best" end="9600" probability = "0.005"/>
+<flow id="type23_0"   begin="0" type="veh_passenger" route="route23" departLane = "best" end="9600" probability = "0.005"/>
+<flow id="type30_0"   begin="0" type="veh_passenger" route="route30" departLane = "best" end="9600" probability = "0.075"/>
+<flow id="type31_0"   begin="0" type="veh_passenger" route="route31" departLane = "best" end="9600" probability = "0.15"/>
+<flow id="type32_0"   begin="0" type="veh_passenger" route="route32" departLane = "best" end="9600" probability = "0.075"/>
+<flow id="type33_0"   begin="0" type="veh_passenger" route="route33" departLane = "best" end="9600" probability = "0.15"/>
+</routes>

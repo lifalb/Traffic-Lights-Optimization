@@ -1,0 +1,17 @@
+tensorflow
+numpy
+utils
+pandas
+traci
+sumolib
+matplotlib
+fastprogress
+setuptools
+sumo_rl
+gymnasium
+stable_baselines3
+pettingzoo
+pyvirtualdisplay
+pandas
+matplotlib
+torch

@@ -86,6 +86,35 @@ pip install -r requirements.txt
 
 ```
 
+### Generate testing and training datasets
+
+To generate training and testing datasets:
+```bash
+cd "Generate route files"
+```
+Modify the variables in `generate_test` and `generate_main` as needed, then run them.
+
+### Training and Testing the models
+
+#### Basic traffic light system:
+```bash
+cd Models/BasicTLS
+```
+Modify the variables in `basicTLS_test` and `basicTLS_train` as needed, then run them.
+
+#### Vidali et al. approach:
+```bash
+cd Models/Andrea/TLCS
+```
+Modify the variables in `training_main` and `testing_main` as needed, then run them.
+
+#### Lucas N. Alegre et al. approach:
+```bash
+cd Models/Sumo-rl/experiments
+```
+Modify the variables in `dqn_2way-single-intersection`,`test` and `ablation` as needed, then run them for training, testing and ablation studies respectively.
+
+
 ### Credits
 
 This project uses code from the following repositories:

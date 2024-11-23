@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <route id="route00" color="1,1,0" edges="182191279#0 182191279#1 463663572#2"/>
+    <route id="route01" color="1,1,0" edges="479203919#0 1102020114#1"/>
+    <route id="route02" color="1,1,0" edges="479203919#0 1148455774#1 1148455774#2"/>
+    <route id="route03" color="1,1,0" edges="479203919#0 1282658977#1 1102020115"/>
+
+    <route id="route10" color="1,1,0" edges="167719753#0 167719753#1 463663572#1"/>
+    <route id="route11" color="1,1,0" edges="167719753#0 167719753#1 1102020114#1"/>
+    <route id="route12" color="1,1,0" edges="167719753#0 463663569#0 463663569#1 1148455774#2"/>
+    <route id="route13" color="1,1,0" edges="167719753#0 167719753#1 1282658977#1 1102020115"/>
+
+    <route id="route20" color="1,1,0" edges="728124911#0 463663572#1"/>
+    <route id="route21" color="1,1,0" edges="E0 E1"/>
+    <route id="route22" color="1,1,0" edges="728124911#0 1148455774#1 1148455774#2"/>
+    <route id="route23" color="1,1,0" edges="728124911#0 1282658977#1 1102020115"/>
+
+    <route id="route30" color="1,1,0" edges="182191263 1282658976#0 463663572#1"/>
+    <route id="route31" color="1,1,0" edges="182191263 1282658976#0 1102020114#1"/>
+    <route id="route32" color="1,1,0" edges="182191263 1282658976#0 1148455774#1 1148455774#2"/>
+    <route id="route33" color="1,1,0" edges="182191263 464896839#0 464896839#1 1102020115"/>
+
+
+    <vType id="veh_passenger" vClass="passenger" maxSpeed = '70' color="1,0,0"/>
+    <flow id="type00"   begin="0" type="veh_passenger" route="route00" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type01"   begin="0" type="veh_passenger" route="route01" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type02"   begin="0" type="veh_passenger" route="route02" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type03"   begin="0" type="veh_passenger" route="route03" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type10"   begin="0" type="veh_passenger" route="route10" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type11"   begin="0" type="veh_passenger" route="route11" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type12"   begin="0" type="veh_passenger" route="route12" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type13"   begin="0" type="veh_passenger" route="route13" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type20"   begin="0" type="veh_passenger" route="route20" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type21"   begin="0" type="veh_passenger" route="route21" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type22"   begin="0" type="veh_passenger" route="route22" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type23"   begin="0" type="veh_passenger" route="route23" departLane = "best" end="5000" probability = "0.01"/>
+    <flow id="type30"   begin="0" type="veh_passenger" route="route30" departLane = "best" end="5000" probability = "0.75"/>
+    <flow id="type31"   begin="0" type="veh_passenger" route="route31" departLane = "best" end="5000" probability = "0.75"/>
+    <flow id="type32"   begin="0" type="veh_passenger" route="route32" departLane = "best" end="5000" probability = "0.75"/>
+    <flow id="type33"   begin="0" type="veh_passenger" route="route33" departLane = "best" end="5000" probability = "0.75"/>
+
+    <vType id="ped_pedestrian" vClass="pedestrian"/>
+    <!-- top left to bottom right -->
+    <personFlow id="p0" begin="0" end="100000" probability="0.05">
+        <walk edges=" 1234032441#0 464896838#1 464896838#0 463663631#2 463663631#0 463663630#2 463663630#0 463663628#1 463663628#0 1175028627"/>
+   </personFlow>
+   <!-- bottom left to top left  -->
+   <personFlow id="p1" begin="0" end="100000" probability="0.05">
+        <walk edges="463663632#2 463663632#0 463663631#2"/>
+   </personFlow>
+     <!-- bottom left to bottom right -->
+   <personFlow id="p2" begin="0" end="100000" probability="0.05">
+        <walk edges="463663632#2 463663629#2 463663629#0 463663628#1 463663628#0 1175028627"/>
+   </personFlow>
+</routes>

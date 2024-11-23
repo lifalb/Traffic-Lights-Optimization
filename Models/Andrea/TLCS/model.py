@@ -87,11 +87,10 @@ class TestModel:
         self._model = self._load_my_model(model_path)
 
 
-    def _load_my_model(self, model_folder_path):
+    def _load_my_model(self, model_file_path):
         """
         Load the model stored in the folder specified by the model number, if it exists
         """
-        model_file_path = os.path.join(model_folder_path, 'trained_model.h5')
         
         if os.path.isfile(model_file_path):
             loaded_model = load_model(model_file_path)

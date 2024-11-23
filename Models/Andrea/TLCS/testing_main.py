@@ -7,17 +7,17 @@ from model import TestModel
 from utils import import_test_configuration, set_sumo
 import pandas as pd
 
-# Define your SUMO configuration file (.sumocfg) path
-sumo_config = os.path.join(os.pardir, os.pardir, "training_network", "osm-test.sumocfg")
+#1- Define your SUMO configuration file (.sumocfg) path (without file name, define file name in testing_settings.ini)
+sumo_config = os.path.join(os.pardir, os.pardir,os.pardir, "training_network")
 
-# Define the tests file path (the file that includes the tests), it should be defined relative to the sumo_config - or define its path from the root
+#2- Define the tests file path (the file that includes the tests), it should be defined relative to the sumo_config - or define its path from the root
 test_files_path = os.path.join(os.pardir, "tests/")
 
-# Define the route file of the output files (where you want to keep the output files)
-output_csv_root_path = os.path.join(os.pardir, os.pardir, "outputs - test", "Andrea/")
+#3- Define the route file of the output files (where you want to keep the output files)
+output_csv_root_path = os.path.join(os.pardir, os.pardir,os.pardir, "outputs - test", "Andrea/")
 
 # Define the model path that you want to test
-model_path = 'models/trained_model.h5'
+model_path = os.path.join(os.pardir, os.pardir,os.pardir, "outputs - train/Andrea/model/trained_model.h5")
 
 # Number of simulation steps
 num_steps = 9600
@@ -63,12 +63,13 @@ if __name__ == "__main__":
 
 </configuration>
 """
-
-        with open(sumo_config, 'w') as file:
+        config = import_test_configuration(config_file='testing_settings.ini')
+        sumo_file_name = config['sumocfg_file_name']
+        sumo_config_full_path = f'{sumo_config}/{sumo_file_name}'
+        with open(sumo_config_full_path, 'w') as file:
             file.write(config_content)
 
-        config = import_test_configuration(config_file='testing_settings.ini')
-        sumo_cmd = set_sumo(config['gui'], config['sumocfg_file_name'], config['max_steps'])
+        sumo_cmd = set_sumo(config['gui'], sumo_config ,config['sumocfg_file_name'], config['max_steps'])
         
         Model = TestModel(
             input_dim=config['num_states'],
